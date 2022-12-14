@@ -1,10 +1,9 @@
 #include "main.h"
+
 /**
- * main - print function _putchar
- * is written by IntegralTechy
+ * main - Print _putchar function
  * Return: 0
  */
-
 int main(void)
 {
 	_putchar('_');
