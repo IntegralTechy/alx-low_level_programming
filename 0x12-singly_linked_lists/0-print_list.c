@@ -12,21 +12,21 @@ size_t print_list(const list_t *h)
 {
 	size_t count = 0;
 
-	if(h == NULL)
+	if (h == NULL)
 		return (0);
-	while(h -> next != NULL)
+	while (h != NULL)
 	{
-		if(h -> str == NULL)
+		if (h->str == NULL)
 			printf("[%d] %s\n", 0 "(nil)");
 		else
-			printf("[%d] %s\n", h -> len, h -> str);
+			printf("[%d] %s\n", h->len, h->str);
 		/*increment the count variable*/
 		count++;
-		h -> next;
+		h->next;
 
 	}
 	/*prints out the final node as the loop breaks out due to its NULL address*/
-	printf("[%d] %s\n", h -> len, h -> str);
+	/*printf("[%d] %s\n", h -> len, h -> str);*/
 
 	return (count);
 
