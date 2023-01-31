@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 
 	if(h == NULL)
 		return (0);
-	while(h != NULL)
+	while(h -> next != NULL)
 	{
 		if(h -> str == NULL)
 			printf("[%d] %s\n", 0 "(nil)");
@@ -26,7 +26,7 @@ size_t print_list(const list_t *h)
 
 	}
 	/*prints out the final node as the loop breaks out due to its NULL address*/
-	/*printf("[%d] %s\n", h -> len, h -> str);*/
+	printf("[%d] %s\n", h -> len, h -> str);
 
 	return (count);
 
